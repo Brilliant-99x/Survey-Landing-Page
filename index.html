@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <div class="back-img">
+            <img src="survey form.png" alt="fitness-imgage" width="100%">
+        </div>
+
+        <div class="main">
+            <div>
+                <h1 id="title">Survey Form</h1>
+                <p id="description"><em>Thank you for taking the time to help us improve the platform</em></p><br><br>
+            </div>
+
+            <form action="" id="survey-form">
+                <div class="input">
+                    <label for="name" id="name-label">Name</label><br>
+                    <input type="text" id="name" placeholder="Enter your name" required><br><br>
+                    <label for="email" id="email-label">Email</label><br>
+                    <input type="email" id="email" placeholder="Enter your email" required><br><br>
+                    <label for="number" id="number-label">Age (optional)</label><br>
+                    <input type="number" id="number" min="16" max="50" placeholder="Enter your age..."><br><br>
+                </div>
+                <div class="input">
+                    <label for="dropdown">Which option best describes your current role?</label><br>
+                    <select id="dropdown" name="dropdown">
+                        <option value="" hidden>select the role</option>
+                        <option value="student">Student</option>
+                        <option value="part-time student">Part-time Student</option>
+                        <option value="full-time student">Full-time Student</option>
+                        <option value="employed">Employed</option>
+                        <option value="unemployed">Unemployed</option>
+                        <option value="prefer not to say">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select><br><br>
+                </div>
+                <div class="recommend">
+                    <label for="recommend">Would you recommend BN-ExperienceFX to a friend?</label><br>
+                    <input type="radio" id="yes" name="recommend" value="YES">
+                    <label for="yes">YES</label><br>
+                    <input type="radio" id="no" name="recommend" value="NO">
+                    <label for="yes">NO</label><br><br>
+                </div>
+                <div>
+                    <label for="feature">What feature do you like most on BN-ExperienceFX?</label><br>
+                    <select id="feature" name="feature">
+                        <option value="" hidden>select one an option</option>
+                        <option value="weekly-marklet-breakdowns">Weekly-Market-Breakdowns</option>
+                        <option value="signals">Signals</option>
+                        <option value="tutorials">Tutorials</option>
+                        <option value="support">Support</option>
+                        <option value="trading-tips">Trading-Tips</option>
+                        <option value="transparency">Transparency</option>
+                        <option value="all-of-the-above">All-Of-The-Above</option>
+                        <option value="none-of-the-above">None-Of-The-Above</option>
+                    </select><br><br>
+                </div>
+                <div class="checked">
+                    <label for="checked">What would you like to see improved? (Check all that apply)</label><br>
+                    <input type="checkbox" id="opt1" name="opt1" value="Weekly-Market-Breakdowns">
+                    <label for="opt1"> Weekly-Market-Breakdowns</label><br>
+                    <input type="checkbox" id="opt2" name="opt2" value="Signals">
+                    <label for="opt2"> Signals</label><br>
+                    <input type="checkbox" id="opt3" name="opt3" value="Support">
+                    <label for="opt3"> Support</label><br>
+                    <input type="checkbox" id="opt4" name="opt4" value="Tutorials">
+                    <label for="opt4"> Tutorials</label><br>
+                    <input type="checkbox" id="opt5" name="opt5" value="Connection">
+                    <label for="opt5"> Connection</label><br>
+                    <input type="checkbox" id="opt5" name="opt5" value="Additional Courses">
+                    <label for="opt5"> Additional Courses</label><br><br>
+                </div>
+                <div class="input" id="input-suggestion">
+                    <label for="comments">Any comments or suggestions?</label><br>
+                    <textarea type="text" placeholder="Enter your comment or suggestions here..."></textarea><br><br>
+                    <button type="submit" id="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
